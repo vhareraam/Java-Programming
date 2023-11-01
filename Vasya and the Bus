@@ -1,0 +1,29 @@
+import java.util.Scanner;
+public class Main
+{
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		int n,m;
+		System.out.println("Enter the number of grown-ups");
+		n=sc.nextInt();
+		System.out.println("Enter the number of children");
+		m=sc.nextInt();
+		if(n==0)
+		System.out.print("Impossible");
+		else if(m==0)
+		{
+		    System.out.println("Minimum possible bus fare : "+n);
+		    System.out.println("Maximum possible bus fare : "+n);
+		}
+		else if(m>n)
+		{
+		    System.out.println("Minimum possible bus fare : "+m);
+		    System.out.println("Maximum possible bus fare : "+((m+n)-1));
+		}
+		else
+		{
+		    System.out.println("Minimum possible bus fare : "+n);
+		    System.out.println("Maximum possible bus fare : "+((m+n)-1));
+		}
+}
+}
