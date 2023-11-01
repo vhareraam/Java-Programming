@@ -1,0 +1,27 @@
+import java.util.Scanner;
+public class Main
+{
+    public static void main(String[] args)
+    {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter a character");
+        char dir=sc.next().charAt(0);
+        System.out.println("Enter the string");
+        String input=sc.next();
+        String keyboard="qwertyuiopasdfghjkl;zxcvbnm,./";
+        StringBuilder decodedmessage=new StringBuilder();
+        for(int i=0;i<input.length();i++)
+        {
+            char currentchar=input.charAt(i);
+            int originalindex=keyboard.indexOf(currentchar);
+            if(dir=='R')
+            originalindex--;
+            else
+            originalindex++;
+            decodedmessage.append(keyboard.charAt(originalindex));
+        }
+        System.out.println("The original message");
+        System.out.println(decodedmessage.toString());
+        
+    }
+}
