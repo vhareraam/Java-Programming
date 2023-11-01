@@ -1,0 +1,28 @@
+import java.util.Scanner;
+public class Main
+{
+	public static void main(String[] args) {
+	    Scanner sc=new Scanner(System.in);
+		int a,b,c,d,k=0,m,n,o,p,q,r,s,t;
+		a=sc.nextInt();
+		b=sc.nextInt();
+		m=a/100;
+		n=a%100;
+		o=n/10;
+		p=n%10;
+		q=b/100;
+		r=b%100;
+		s=r/10;
+		t=r%10;
+		if(p+t>9){
+		k=k+1;
+		}
+		if(o+s>9){
+		k=k+1;
+		}
+		if(m+q>9){
+		k=k+1;
+		}
+		System.out.print(k);
+	}
+}
