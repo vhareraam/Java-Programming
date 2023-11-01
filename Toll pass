@@ -1,0 +1,29 @@
+import java.util.Scanner;
+public class Main
+{
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		int x,y;
+		float o,t,m;
+		x=sc.nextInt();
+		y=sc.nextInt();
+		o=sc.nextFloat();
+		t=sc.nextFloat();
+		m=sc.nextFloat();
+		if(o < t && t < m)
+		{
+		if(m<((x*o)+(y*t)))
+		{
+		    System.out.print("Monthly Pass");
+		}
+		else
+		{
+		    System.out.print("One way pass + Two way pass");
+		}
+		}
+		else
+		{
+		    System.out.print("Invalid Input");
+		}
+	}
+}
