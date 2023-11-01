@@ -1,0 +1,47 @@
+class grandfather{
+    grandfather(){
+        System.out.println("Grandfather's constructor");
+    }
+    int gmoney=50000;
+    public static void land(){
+        System.out.println("Grandfather's land");
+    }
+}
+//Multilevel inheritance
+class father extends grandfather{
+    father(){
+        System.out.println("Father's constructor");
+    }
+    int fmoney=5000;
+    public static void house(){
+        System.out.println("Father's house");
+    }
+}
+class child1 extends father{
+    child1(){
+        System.out.println("Child1's constructor");
+    }
+    int c1money=500;
+    public static void mobile1(){
+        System.out.println("Child1's mobile");
+    }
+}
+//Hierarchical inheritance
+class child2 extends father{
+    child2(){
+        System.out.println("Child2's constructor");
+    }
+    int c2money=500;
+    public static void mobile2(){
+        System.out.println("Child2's mobile");
+    }
+}
+public class Main{
+public static void main(String[] args){
+    child2 ch=new child2();
+    System.out.println(ch.gmoney);
+    ch.land();
+    System.out.println(ch.fmoney);
+    ch.house();
+}
+}
