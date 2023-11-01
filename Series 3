@@ -1,0 +1,35 @@
+import java.util.Scanner;
+public class Main
+{
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		int i,n,a=0;
+		n=sc.nextInt();
+		for(i=1;i<=n;i++)
+		{
+		    if(i==n)
+		    {
+		        if(i%2==1)
+		        {
+		            System.out.print((i*i)-1);
+		        }
+		        else
+		        {
+		            System.out.print((i*i)-2);
+		        }
+		    }
+		    else
+		    {
+		        if(i%2==1)
+		        {
+		            System.out.print((i*i)-1 + " ");
+		        }
+		        else
+		        {
+		            System.out.print((i*i)-2 + " ");
+		        }
+		    }
+		    
+		}
+	}
+}
