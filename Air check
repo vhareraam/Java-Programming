@@ -1,0 +1,39 @@
+import java.util.Scanner;
+public class Main
+{
+	public static void main(String[] args) {
+	Scanner sc=new Scanner(System.in);
+	float fl,rl,rr,fr;
+	fl=sc.nextFloat();
+	rl=sc.nextFloat();
+	rr=sc.nextFloat();
+	fr=sc.nextFloat();
+	if(fl>33)
+	System.out.println("Front-left : Deflate");
+	else if(fl<33)
+	System.out.println("Front-left : Inflate");
+	else if(fl==33)
+	System.out.println("Front-left : Untouched");
+	
+	if(rl>32)
+	System.out.println("Rear-left : Deflate");
+	else if(rl<32)
+	System.out.println("Rear-left : Inflate");
+	else if(rl==32)
+	System.out.println("Rear-left : Untouched");
+	
+	if(rr>32)
+	System.out.println("Rear-right : Deflate");
+	else if(rr<32)
+	System.out.println("Rear-right : Inflate");
+	else if(rr==32)
+	System.out.println("Rear-right : Untouched");
+	
+	if(fr>33)
+	System.out.println("Front-right : Deflate");
+	else if(fr<33)
+	System.out.println("Front-right : Inflate");
+	else if(fr==33)
+	System.out.println("Front-right : Untouched");
+	}
+}
