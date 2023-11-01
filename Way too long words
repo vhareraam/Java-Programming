@@ -1,0 +1,28 @@
+import java.util.Scanner;
+public class Main
+{
+    public static void main(String[] args)
+    {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter the number of words");
+        int n=sc.nextInt();
+        sc.nextLine();
+        String[] str=new String[n];
+        System.out.println("Enter the words");
+        for(int i=0;i<n;i++)
+        {
+            str[i]=sc.nextLine();
+        }
+        System.out.println("Abbreviation");
+        for(int i=0;i<n;i++)
+        {
+            if(str[i].length()>10)
+            {
+            int midlen=(str[i].length())-2;
+            System.out.println(str[i].charAt(0)+Integer.toString(midlen)+str[i].charAt(str[i].length()-1));
+            }
+            else
+            System.out.println(str[i]);
+        }
+    }
+}
