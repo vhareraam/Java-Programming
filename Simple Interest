@@ -1,0 +1,14 @@
+import java.util.Scanner;
+class Main
+{
+    public static void main(String args[])
+    {
+        Scanner sc=new Scanner(System.in);
+        int p,n;
+        float r;
+        p=sc.nextInt();
+        n=sc.nextInt();
+        r=sc.nextFloat();
+        System.out.printf("%.2f",(p*n*r)/100);
+    }
+}
