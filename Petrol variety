@@ -1,0 +1,23 @@
+import java.util.Scanner;
+public class Main
+{
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		float m,o,s,b;
+		int d;
+		m=sc.nextFloat();
+		o=sc.nextFloat();
+		s=sc.nextFloat();
+		d=sc.nextInt();
+		b=sc.nextFloat();
+		if((d/m)*s <= b)
+		{
+		    System.out.print("Speed");
+		}
+		else
+		{
+		    System.out.print("Ordinary");
+		}
+		
+	}
+}
