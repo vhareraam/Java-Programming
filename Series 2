@@ -1,0 +1,17 @@
+import java.util.Scanner;
+public class Main
+{
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		int i,n,a=11;
+		n=sc.nextInt();
+		for(i=1;i<=n;i++)
+		{
+		    if(i==n)
+		    System.out.print(a*a);
+		    else
+		    System.out.print((a*a)+" ");
+		    a+=4;
+		}
+	}
+}
