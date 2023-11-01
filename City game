@@ -1,0 +1,16 @@
+import java.util.Scanner;
+public class Main
+{
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter the number of levels");
+		int n=sc.nextInt();
+		System.out.println("Enter the required sum of points");
+		int k=sc.nextInt();
+		if((n*2) ==k)
+		System.out.println("The minimum number of levels is "+n);
+		else
+		System.out.println("The minimum number of levels is "+(k-(n*2)));
+		
+	}
+}
