@@ -1,0 +1,40 @@
+import java.util.*;
+public class Main{
+    
+    public static int Solve(int n, int[] arr){
+        int[] evenArr=new int[(n+1)/2];
+        int[] oddArr=new int[n/2];
+        for(int i=0,j=0,k=0;i<n;i++)
+        {
+            if(i%2==0)
+            evenArr[j++]=arr[i];
+            else
+            oddArr[k++]=arr[i];
+        }
+        Arrays.sort(evenArr);
+        Arrays.sort(oddArr);
+        for(int i=0;i<evenArr.length;i++)
+        {
+            System.out.print(evenArr[i]+" ");
+        }
+        System.out.println();
+        for(int i=0;i<oddArr.length;i++)
+        {
+            System.out.print(oddArr[i]+" ");
+        }
+        System.out.println();
+        int x=evenArr[evenArr.length-2];
+        int y=oddArr[oddArr.length-2];
+        return x+y;
+    }
+    public static void main(String[] args){
+        Scanner sc=new Scanner(System.in);
+        int n=sc.nextInt();
+        int[] arr=new int[n];
+        for(int i=0;i<n;i++)
+        {
+            arr[i]=sc.nextInt();
+        }
+        System.out.print(Solve(n,arr));
+    }
+}
